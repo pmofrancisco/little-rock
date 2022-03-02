@@ -1,0 +1,26 @@
+{
+  "name": "@little-rock/components",
+  "version": "1.0.0",
+  "description": "Little Rock Components",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "tsc",
+    "pub": "npm version patch && git add . && git commit -m \"Upgrade version\" && npm run build && npm publish"
+  },
+  "keywords": [],
+  "author": "Paul Michael O. Francisco",
+  "license": "ISC",
+  "devDependencies": {
+    "del-cli": "^4.0.1",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@types/styled-components": "^5.1.24",
+    "styled-components": "^5.3.3"
+  }
+}
