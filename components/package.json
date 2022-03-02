@@ -10,15 +10,25 @@
   "scripts": {
     "clean": "del ./build/*",
     "build": "tsc",
-    "pub": "npm version patch && git add . && git commit -m \"Upgrade version\" && npm run build && npm publish"
+    "pub": "npm version patch && git add . && git commit -m \"Upgrade version\" && npm run build && npm publish",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "Paul Michael O. Francisco",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.12",
     "@types/styled-components": "^5.1.24",
+    "babel-loader": "^8.2.3",
     "del-cli": "^4.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -32,5 +42,6 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-components": "^5.3.3"
-  }
+  },
+  "dependencies": {}
 }
